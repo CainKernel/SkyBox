@@ -163,8 +163,6 @@ public class ICamera {
 		List<Camera.Size> allSupportedSize = camPara.getSupportedPreviewSizes();
 		ArrayList<Camera.Size> widthLargerSize = new ArrayList<Camera.Size>();
 		for (Camera.Size tmpSize : allSupportedSize) {
-			Log.w("ceshi", "tmpSize.width===" + tmpSize.width
-					+ ", tmpSize.height===" + tmpSize.height);
 			if (tmpSize.width > tmpSize.height) {
 				widthLargerSize.add(tmpSize);
 			}
